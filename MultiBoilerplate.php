@@ -36,7 +36,7 @@ $wgHooks[ 'EditPage::showEditForm:initial' ][] = 'efMultiBoilerplate';
 // Set extension messages file.
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles[ 'MultiBoilerplate' ] = $dir . 'MultiBoilerplate.i18n.php';
-$wgExtensionMessagesFiles[ 'MultiBoilerplate' ] = $dir . 'MultiBoilerplate.i18n.php';
+$wgMessagesDirs['MultiBoilerplate'] = $dir . '/i18n';
 $wgAutoloadClasses['SpecialBoilerplates'] = $dir . 'SpecialBoilerplates_body.php';
 $wgSpecialPages['Boilerplates'] = 'SpecialBoilerplates';
 $wgSpecialPageGroups['Boilerplates'] = 'wiki'; //section of [[Special:SpecialPages]]
